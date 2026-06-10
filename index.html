@@ -1,213 +1,868 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>영화 미학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반포 마사지 정보 - 프로페셔널 마사지 센터 | 반포 마사지</title>
+    <meta name="description" content="반포 마사지 정보를 제공하는 프로페셔널 마사지 센터입니다. 과학적 근거와 체계적인 접근으로 최상의 마사지 서비스를 제공합니다. 지금 예약하세요.">
+    <meta name="keywords" content="반포 마사지, 반포 마사지 정보, 마사지 센터, 스포츠 마사지, 림프 마사지, 반포, 마사지, 전문 마사지">
+    <meta name="bpaas-design-system" content="organic-stripe">
+    <meta name="bpaas-design-theme" content="kr-organic-stripe">
+    <link rel="canonical" href="https://kr-pbn-sr-024.vercel.app/">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="반포 마사지 정보 - 프로페셔널 마사지 센터">
+    <meta property="og:description" content="반포 마사지 정보를 제공하는 프로페셔널 마사지 센터입니다. 과학적 근거와 체계적인 접근으로 최상의 마사지 서비스를 제공합니다.">
+    <meta property="og:url" content="https://kr-pbn-sr-024.vercel.app/">
+    <meta property="og:site_name" content="반포 마사지 정보">
+    <meta property="og:locale" content="ko_KR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="반포 마사지 정보 - 프로페셔널 마사지 센터">
+    <meta name="twitter:description" content="반포 마사지 정보를 제공하는 프로페셔널 마사지 센터입니다. 과학적 근거와 체계적인 접근으로 최상의 마사지 서비스를 제공합니다.">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "반포 마사지 정보",
+        "description": "반포 지역 최고의 프로페셔널 마사지 센터",
+        "url": "https://kr-pbn-sr-024.vercel.app",
+        "telephone": "+82-10-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "서울특별시",
+            "addressRegion": "서초구",
+            "addressCountry": "KR"
+        },
+        "priceRange": "₩₩",
+        "areaServed": "반포",
+        "image": "https://kr-pbn-sr-024.vercel.app/images/massage_therapy.svg"
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
+    
+    <style>
+        /* CSS Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        :root {
+            --primary: #2e2522;
+            --secondary: #fcf8f2;
+            --accent: #7f5539;
+            --accent-light: #a0765a;
+            --text-primary: #2e2522;
+            --text-secondary: #4a3f3a;
+            --border-color: #d4c9c1;
+            --bg-pattern: linear-gradient(135deg, #fcf8f2 0%, #f5eee8 100%);
+            --card-bg: #ffffff;
+            --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+            --container-width: 960px;
+            --gap: 32px;
+            --padding: 48px;
+            --section-gap: 80px;
+            --border-radius: 0;
+            --transition: 0.2s ease;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-family);
+            background-color: var(--secondary);
+            background-image: var(--bg-pattern);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--padding);
+        }
+        
+        /* ========== Typography ========== */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--text-primary);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+        
+        h2 {
+            font-size: 1.75rem;
+            letter-spacing: -0.01em;
+            margin-bottom: 24px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 16px;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+        }
+        
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+        
+        a:hover {
+            color: var(--primary);
+        }
+        
+        /* ========== Header & Navigation ========== */
+        header {
+            background-color: var(--primary);
+            color: var(--secondary);
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        .nav-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+        
+        .logo {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--secondary);
+            letter-spacing: 0.02em;
+        }
+        
+        .logo a {
+            color: var(--secondary);
+        }
+        
+        .logo a:hover {
+            color: var(--accent-light);
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+        
+        nav a {
+            color: var(--secondary);
+            font-size: 0.9375rem;
+            font-weight: 500;
+            padding: 4px 0;
+            border-bottom: 1px solid transparent;
+            transition: border-color var(--transition), color var(--transition);
+        }
+        
+        nav a:hover {
+            color: var(--accent-light);
+            border-bottom-color: var(--accent-light);
+        }
+        
+        .nav-cta {
+            background-color: var(--accent);
+            color: var(--secondary);
+            padding: 8px 20px;
+            border: none;
+            font-weight: 600;
+            font-size: 0.875rem;
+            transition: background-color var(--transition);
+            cursor: pointer;
+        }
+        
+        .nav-cta:hover {
+            background-color: var(--accent-light);
+            color: var(--secondary);
+        }
+        
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            background: none;
+            border: 1px solid var(--accent);
+            padding: 8px;
+        }
+        
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 1.5px;
+            background-color: var(--secondary);
+            margin: 3px 0;
+            transition: transform var(--transition), opacity var(--transition);
+        }
+        
+        /* ========== Hero Section ========== */
+        .hero {
+            padding: 72px 0;
+            border-bottom: 1px solid var(--border-color);
+            background-color: var(--secondary);
+        }
+        
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 2.75rem;
+            line-height: 1.1;
+        }
+        
+        .hero-content .subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            line-height: 1.5;
+        }
+        
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+            background: linear-gradient(135deg, #2e2522 0%, #4a3f3a 50%, #7f5539 100%);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-visual svg {
+            width: 80%;
+            height: auto;
+            opacity: 0.85;
+        }
+        
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 32px;
+            font-weight: 600;
+            font-size: 0.9375rem;
+            border: 2px solid var(--accent);
+            background-color: transparent;
+            color: var(--accent);
+            transition: all var(--transition);
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--secondary);
+            border-color: var(--accent);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: var(--secondary);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--accent);
+            color: var(--secondary);
+        }
+        
+        /* ========== Sections ========== */
+        .section {
+            padding: var(--section-gap) 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .section:last-of-type {
+            border-bottom: none;
+        }
+        
+        /* ========== Services Grid ========== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--gap);
+        }
+        
+        .service-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 32px 24px;
+            transition: transform var(--transition), box-shadow var(--transition);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(46, 37, 34, 0.08);
+        }
+        
+        .service-card .icon-wrap {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border: 1px solid var(--accent);
+        }
+        
+        .service-card .icon-wrap svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--accent);
+        }
+        
+        .service-card h3 {
+            font-size: 1.125rem;
+            margin-bottom: 8px;
+        }
+        
+        .service-card p {
+            font-size: 0.9375rem;
+            line-height: 1.5;
+        }
+        
+        .service-card .price {
+            margin-top: 16px;
+            font-weight: 600;
+            color: var(--accent);
+            font-size: 1rem;
+        }
+        
+        /* ========== UGC Reviews ========== */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--gap);
+        }
+        
+        .review-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 28px 24px;
+            transition: background-color var(--transition);
+        }
+        
+        .review-card:hover {
+            background-color: #faf6f0;
+        }
+        
+        .review-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+        
+        .review-author {
+            font-weight: 600;
+            font-size: 0.9375rem;
+            color: var(--text-primary);
+        }
+        
+        .review-date {
+            font-size: 0.8125rem;
+            color: #8a7a72;
+        }
+        
+        .review-stars {
+            display: flex;
+            gap: 2px;
+            margin-bottom: 12px;
+        }
+        
+        .review-stars span {
+            font-size: 1rem;
+            color: #7f5539;
+        }
+        
+        .review-content {
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+        
+        /* ========== Info Section ========== */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--gap);
+        }
+        
+        .info-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 32px 24px;
+        }
+        
+        .info-card h3 {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .info-card ul {
+            list-style: none;
+        }
+        
+        .info-card ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ede8e2;
+            font-size: 0.9375rem;
+            color: var(--text-secondary);
+        }
+        
+        .info-card ul li:last-child {
+            border-bottom: none;
+        }
+        
+        /* ========== CTA Section ========== */
+        .cta-section {
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: 64px 0;
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        .cta-section h2 {
+            color: var(--secondary);
+            border-bottom-color: var(--accent);
+        }
+        
+        .cta-section p {
+            color: #d4c9c1;
+            font-size: 1.0625rem;
+        }
+        
+        .cta-section .btn {
+            border-color: var(--secondary);
+            color: var(--secondary);
+        }
+        
+        .cta-section .btn-primary {
+            background-color: var(--secondary);
+            color: var(--primary);
+            border-color: var(--secondary);
+        }
+        
+        .cta-section .btn-primary:hover {
+            background-color: var(--accent-light);
+            border-color: var(--accent-light);
+            color: var(--secondary);
+        }
+        
+        .cta-section .btn-outline:hover {
+            background-color: var(--secondary);
+            color: var(--primary);
+        }
+        
+        /* ========== Footer ========== */
+        footer {
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: 48px 0 32px;
+            font-size: 0.875rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: var(--gap);
+            margin-bottom: 32px;
+        }
+        
+        .footer-col h4 {
+            color: var(--secondary);
+            font-size: 0.9375rem;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 8px;
+        }
+        
+        .footer-col p, .footer-col a {
+            color: #b0a59e;
+            font-size: 0.875rem;
+        }
+        
+        .footer-col a:hover {
+            color: var(--accent-light);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #4a3f3a;
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .footer-bottom p {
+            color: #8a7a72;
+            font-size: 0.8125rem;
+            margin-bottom: 0;
+        }
+        
+        /* ========== Responsive ========== */
+        @media (max-width: 768px) {
+            :root {
+                --padding: 24px;
+                --gap: 24px;
+                --section-gap: 48px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            /* Navigation */
+            .hamburger {
+                display: flex;
+            }
+            
+            nav {
+                display: none;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background-color: var(--primary);
+                flex-direction: column;
+                padding: 24px;
+                gap: 16px;
+                border-bottom: 2px solid var(--accent);
+                z-index: 100;
+            }
+            
+            nav.active {
+                display: flex;
+            }
+            
+            nav a {
+                font-size: 1rem;
+                padding: 8px 0;
+                width: 100%;
+                text-align: left;
+            }
+            
+            .nav-cta {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .nav-wrapper {
+                position: relative;
+            }
+            
+            /* Hero */
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.25rem;
+            }
+            
+            .hero-visual {
+                min-height: 200px;
+                order: -1;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .hero-cta .btn {
+                width: 100%;
+                text-align: center;
+            }
+            
+            /* Grids */
+            .services-grid,
+            .reviews-grid,
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        /* ========== Utility ========== */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mt-16 {
+            margin-top: 16px;
+        }
+        
+        .mt-24 {
+            margin-top: 24px;
+        }
+        
+        .mb-16 {
+            margin-bottom: 16px;
+        }
+        
+        .gap-12 {
+            gap: 12px;
+        }
+        
+        .flex {
+            display: flex;
+        }
+        
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+        
+        .items-center {
+            align-items: center;
+        }
+        
+        .justify-center {
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
     <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>영화 미학 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>영화 미학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h3>
-          <p>세계적인 영화 거장 안드레이 타르코프스키 감독이 고집했던 롱테이크 샷 기법은 단순히 기술적인 길이를 넘어 관객의 물리적 시간 감각을 정지시키고 인위적인 미장센 속 조형적 침묵을 체...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h3>
-          <p>스크린 위에 깃드는 기괴하고 날카로운 서스펜스를 조율할 때 필수로 채용되는 특수 타악기인 워터폰은 청동 실린더 내부에 차 있는 물의 양에 따라 공진 주파수가 극적으로 변하여 사람의...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h3>
-          <p>완벽주의적인 시네아스트 스탠리 큐브릭이 애용했던 화면 정중앙의 1점 투시 수렴 대칭 구도는 관객의 시선을 강제로 가두어 인공적인 폐쇄 공포와 거역할 수 없는 심리적 억압 효과를 자...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 강남 셔츠룸 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 강남 셔츠룸 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="/">반포마사지정보</a>
+                </div>
+                <nav id="mainNav">
+                    <a href="#services">서비스</a>
+                    <a href="#reviews">리뷰</a>
+                    <a href="#info">정보</a>
+                    <a href="#contact">연락처</a>
+                    <a href="tel:010-6279-0862" class="nav-cta">010-6279-0862</a>
+                </nav>
+                <button class="hamburger" id="hamburgerBtn" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <h1>반포 마사지<br>프로페셔널 케어</h1>
+                        <p class="subtitle">과학적 접근과 체계적인 기술로 근육 회복과 림프 순환을 최적화합니다. 10년 이상의 임상 경험을 바탕으로 한 맞춤형 마사지 프로그램을 제공합니다.</p>
+                        <div class="hero-cta">
+                            <a href="tel:010-6279-0862" class="btn btn-primary">전화 예약하기</a>
+                            <a href="#services" class="btn btn-outline">서비스 보기</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="none"/>
+                            <circle cx="200" cy="120" r="60" fill="#fcf8f2" opacity="0.9"/>
+                            <ellipse cx="200" cy="120" rx="45" ry="50" fill="#2e2522" opacity="0.15"/>
+                            <path d="M140 190 Q200 140 260 190" stroke="#fcf8f2" stroke-width="2" fill="none" opacity="0.7"/>
+                            <path d="M120 230 Q200 180 280 230" stroke="#fcf8f2" stroke-width="1.5" fill="none" opacity="0.5"/>
+                            <circle cx="160" cy="100" r="3" fill="#fcf8f2" opacity="0.6"/>
+                            <circle cx="240" cy="100" r="3" fill="#fcf8f2" opacity="0.6"/>
+                            <line x1="100" y1="260" x2="300" y2="260" stroke="#fcf8f2" stroke-width="1" opacity="0.4"/>
+                            <line x1="80" y1="270" x2="320" y2="270" stroke="#fcf8f2" stroke-width="0.5" opacity="0.3"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2>전문 마사지 서비스</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon-wrap">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="8" r="4" fill="none" stroke="#7f5539" stroke-width="1.5"/>
+                                <path d="M4 22c0-4 3.6-8 8-8s8 4 8 8" fill="none" stroke="#7f5539" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <h3>스포츠 마사지</h3>
+                        <p>운동 전후 근육 회복과 유연성 향상을 위한 과학적 접근. 근막 이완과 트리거 포인트 해소에 특화.</p>
+                        <div class="price">60분 / 80,000원</div>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon-wrap">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8 2 4 5 4 9c0 5 8 13 8 13s8-8 8-13c0-4-4-7-8-7z" fill="none" stroke="#7f5539" stroke-width="1.5"/>
+                                <circle cx="12" cy="9" r="2" fill="none" stroke="#7f5539" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <h3>림프 마사지</h3>
+                        <p>부종 완화와 면역 증진을 위한 림프 순환 촉진 테크닉. 부드럽고 리드미컬한 압박으로 독소 배출.</p>
+                        <div class="price">60분 / 90,000원</div>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon-wrap">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="4" y="6" width="16" height="12" rx="2" fill="none" stroke="#7f5539" stroke-width="1.5"/>
+                                <path d="M8 10h8M8 14h6" stroke="#7f5539" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>딥 티슈 마사지</h3>
+                        <p>만성 통증과 근육 경직 해소를 위한 심층 근육 접근. 국소적 압박과 마찰 기법을 활용한 정밀 케어.</p>
+                        <div class="price">60분 / 85,000원</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="section">
+            <div class="container">
+                <h2>고객 리뷰</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 강남 셔츠룸 상세 정보 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
       </div>
-    </footer>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">시네필과 영화 예술 매니아들이 엄선 정리한 강남 셔츠룸 상세 정보 리포트</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 포스트 메타정보포스트 기획 테마: 반포 마사지 정보 솔직 후기 — 3개월 써본 사람의 리얼 리뷰 ## Apache Superset 2.0 릴리스 전 PyPI에서 삭제된 RC3 빌드의 취약점과 삭제된 실제 이유 아, 진짜... Apache Superset 2.0 </p>
+      </div>
+      <a href="posts/review-002-1llsf2t.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">반포 마사지 정보 관련 추천 정보 — 놓치면 후회할 꿀팁</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 키워드 컨텍스트이 포스트는 "마곡 코인노래방 할인" 주제와 자연스럽게 연결되어야 합니다. 내용 중 이 키워드를 유기적으로 녹여내세요. [키워드 컨텍스트] 반포 마사지 정보에 대한 다양한 리뷰와 가이드를 통해 실제 효과와 비용 분석을 제공합니다. 또한, 코인노래방</p>
+      </div>
+      <a href="posts/t3link-001-1llsf2t.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
 </body>
 </html>
