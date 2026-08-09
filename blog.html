@@ -1,142 +1,140 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>반포 마사지 정보 블로그 | 과학적 마사지 가이드</title>
-    <meta name="description" content="반포 마사지 정보를 데이터 기반으로 분석한 블로그. 스포츠마사지와 림프마사지의 생리학적 효과, 임상 연구 결과를 바탕으로 전문적 인사이트를 제공합니다.">
-    <meta name="keywords" content="반포 마사지 정보, 반포 마사지 블로그, 스포츠마사지 효과, 림프마사지 과학, 마사지 임상연구, 반포, 마사지, 전문 마사지">
-    <meta name="bpaas-design-system" content="organic-stripe">
-    <meta name="bpaas-design-theme" content="kr-organic-stripe">
-    <link rel="canonical" href="https://banpo-body-care.node-link.shop/blog.html">
-    <!-- Open Graph -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="반포 마사지 정보 블로그 | 과학적 마사지 가이드">
-    <meta property="og:description" content="반포 마사지 정보를 데이터 기반으로 분석한 블로그. 스포츠마사지와 림프마사지의 생리학적 효과, 임상 연구 결과를 바탕으로 전문적 인사이트를 제공합니다.">
-    <meta property="og:url" content="https://banpo-body-care.node-link.shop/blog.html">
-    <meta property="og:site_name" content="반포 마사지 정보">
-    <meta property="og:locale" content="ko_KR">
-    <meta property="og:image" content="https://kr-pbn-sr-024.vercel.app/images/og-blog.webp">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="반포 마사지 정보 블로그 | 과학적 마사지 가이드">
-    <meta name="twitter:description" content="반포 마사지 정보를 데이터 기반으로 분석한 블로그. 스포츠마사지와 림프마사지의 생리학적 효과, 임상 연구 결과를 바탕으로 전문적 인사이트를 제공합니다.">
-    <style>
-        /* CSS Reset */
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        :root { --color-bg: #fafaf7; --color-text: #1e1e1a; --color-primary: #2b5a3a; --color-secondary: #c7b38a; --color-accent: #d9c9a8; --color-border: #e3ddd1; --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif; --container-max: 1280px; --spacing-unit: 1.25rem; }
-        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
-        body { font-family: var(--font-sans); color: var(--color-text); background: var(--color-bg); line-height: 1.7; }
-        .container { max-width: var(--container-max); margin: 0 auto; padding: 0 1.5rem; }
-        /* ========== Typography ========== */
-        h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; letter-spacing: -0.02em; color: #1a2e1f; }
-        h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.2; margin-bottom: 1.2rem; border-left: 6px solid var(--color-secondary); padding-left: 1.2rem; }
-        h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin-top: 2.8rem; margin-bottom: 1rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.5rem; }
-        h3 { font-size: 1.4rem; margin-top: 2rem; margin-bottom: 0.6rem; }
-        p { margin-bottom: 1.4rem; font-size: 1.05rem; }
-        a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s; }
-        a:hover { color: #1f402a; text-decoration-thickness: 2px; }
-        /* ========== Header & Navigation ========== */
-        header { background: #ffffff; border-bottom: 1px solid var(--color-border); padding: 1.2rem 0; position: sticky; top: 0; z-index: 50; backdrop-filter: blur(4px); background: rgba(255,255,252,0.96); }
-        .header-inner { display: flex; justify-content: space-between; align-items: center; max-width: var(--container-max); margin: 0 auto; padding: 0 1.5rem; }
-        .logo { font-family: var(--font-serif); font-size: 1.8rem; font-weight: 600; color: var(--color-primary); text-decoration: none; letter-spacing: -0.02em; }
-        .logo:hover { text-decoration: none; }
-        nav { display: flex; gap: 2.2rem; align-items: center; }
-        nav a { font-size: 0.95rem; font-weight: 500; color: var(--color-text); text-decoration: none; letter-spacing: 0.02em; padding: 0.4rem 0; border-bottom: 2px solid transparent; transition: border-color 0.2s; }
-        nav a:hover { border-bottom-color: var(--color-secondary); color: #000; }
-        .tel-link { background: var(--color-primary); color: #fff !important; padding: 0.5rem 1.4rem !important; border-radius: 40px; font-weight: 600; border: none; text-decoration: none; transition: background 0.2s; }
-        .tel-link:hover { background: #1f402a; color: #fff !important; border-bottom: none; }
-        .hamburger-menu { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
-        .hamburger-menu span { width: 28px; height: 2px; background: var(--color-text); border-radius: 4px; transition: 0.2s; }
-        /* ========== Hero / Page title ========== */
-        .page-hero { padding: 3.5rem 0 1.8rem; }
-        .page-hero .container { display: flex; flex-direction: column; }
-        .page-hero p.sub { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; color: #6b6b5e; margin-bottom: 0.2rem; }
-        /* ========== Blog article ========== */
-        .blog-article { padding: 1rem 0 4rem; }
-        .blog-article .container { max-width: 820px; }
-        .blog-meta { display: flex; gap: 1.2rem; font-size: 0.9rem; color: #6b6b5e; margin-bottom: 1.8rem; border-bottom: 1px dashed var(--color-border); padding-bottom: 1rem; }
-        .blog-meta span { display: inline-flex; align-items: center; gap: 0.3rem; }
-        .featured-image { width: 100%; height: auto; border-radius: 12px; margin: 1.5rem 0 2rem; border: 1px solid var(--color-border); }
-        .data-box { background: #f3f1ec; border-left: 4px solid var(--color-primary); padding: 1.6rem 2rem; margin: 2rem 0; border-radius: 0 12px 12px 0; }
-        .data-box p { margin-bottom: 0.6rem; font-size: 0.98rem; }
-        .data-box strong { color: var(--color-primary); }
-        blockquote { font-family: var(--font-serif); font-size: 1.2rem; font-style: italic; border-left: 4px solid var(--color-secondary); padding-left: 1.4rem; margin: 2rem 0; color: #2e3d32; background: #f9f7f2; padding: 1.2rem 1.8rem; border-radius: 0 8px 8px 0; }
-        /* ========== Footer ========== */
-        footer { background: #1e2b22; color: #d8d8cc; padding: 2.8rem 0; margin-top: 3rem; }
-        footer .container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1.5rem; }
-        footer a { color: #c7d4c0; text-decoration: underline; }
-        footer a:hover { color: #fff; }
-        .footer-copy { font-size: 0.85rem; opacity: 0.8; margin-top: 1.2rem; width: 100%; text-align: center; border-top: 1px solid #3a4d3e; padding-top: 1.2rem; }
-        /* ========== Responsive 768 ========== */
-        @media (max-width: 768px) {
-            .header-inner { flex-wrap: wrap; }
-            nav { display: none; width: 100%; flex-direction: column; gap: 1rem; padding: 1.2rem 0 0.8rem; border-top: 1px solid var(--color-border); margin-top: 0.8rem; }
-            nav.nav-present { display: flex; }
-            .hamburger-menu { display: flex; }
-            .tel-link { align-self: flex-start; }
-            .page-hero h1 { font-size: 1.9rem; }
-            .blog-meta { flex-wrap: wrap; gap: 0.6rem; }
-        }
-        @media (min-width: 769px) {
-            nav.nav-present { display: flex !important; }
-            .hamburger-menu { display: none; }
-        }
-        /* organic-stripe subtle texture */
-        body::before { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; background: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(200,190,170,0.02) 40px, rgba(200,190,170,0.02) 42px); z-index: -1; }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>반포 마사지 정보 블로그 | 과학적 마사지 가이드</title>
+ <meta name="description" content="반포 마사지 정보를 데이터 기반으로 분석한 블로그. 스포츠마사지와 림프마사지의 생리학적 효과, 임상 연구 결과를 바탕으로 전문적 인사이트를 제공합니다.">
+ <meta name="keywords" content="반포 마사지 정보, 반포 마사지 블로그, 스포츠마사지 효과, 림프마사지 과학, 마사지 임상연구, 반포, 마사지, 전문 마사지">
+ <link rel="canonical" href="https://banpo-body-care.node-link.shop/blog.html">
+ <!-- Open Graph -->
+ <meta property="og:type" content="article">
+ <meta property="og:title" content="반포 마사지 정보 블로그 | 과학적 마사지 가이드">
+ <meta property="og:description" content="반포 마사지 정보를 데이터 기반으로 분석한 블로그. 스포츠마사지와 림프마사지의 생리학적 효과, 임상 연구 결과를 바탕으로 전문적 인사이트를 제공합니다.">
+ <meta property="og:url" content="https://banpo-body-care.node-link.shop/blog.html">
+ <meta property="og:site_name" content="반포 마사지 정보">
+ <meta property="og:locale" content="ko_KR">
+ <meta property="og:image" content="https://kr-pbn-sr-024.vercel.app/images/og-blog.webp">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="반포 마사지 정보 블로그 | 과학적 마사지 가이드">
+ <meta name="twitter:description" content="반포 마사지 정보를 데이터 기반으로 분석한 블로그. 스포츠마사지와 림프마사지의 생리학적 효과, 임상 연구 결과를 바탕으로 전문적 인사이트를 제공합니다.">
+ <style>
+ /* CSS Reset */
+ *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+ :root { --color-bg: #fafaf7; --color-text: #1e1e1a; --color-primary: #2b5a3a; --color-secondary: #c7b38a; --color-accent: #d9c9a8; --color-border: #e3ddd1; --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif; --container-max: 1280px; --spacing-unit: 1.25rem; }
+ html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+ body { font-family: var(--font-sans); color: var(--color-text); background: var(--color-bg); line-height: 1.7; }
+ .container { max-width: var(--container-max); margin: 0 auto; padding: 0 1.5rem; }
+ /* ========== Typography ========== */
+ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; letter-spacing: -0.02em; color: #1a2e1f; }
+ h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.2; margin-bottom: 1.2rem; border-left: 6px solid var(--color-secondary); padding-left: 1.2rem; }
+ h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin-top: 2.8rem; margin-bottom: 1rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.5rem; }
+ h3 { font-size: 1.4rem; margin-top: 2rem; margin-bottom: 0.6rem; }
+ p { margin-bottom: 1.4rem; font-size: 1.05rem; }
+ a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s; }
+ a:hover { color: #1f402a; text-decoration-thickness: 2px; }
+ /* ========== Header & Navigation ========== */
+ header { background: #ffffff; border-bottom: 1px solid var(--color-border); padding: 1.2rem 0; position: sticky; top: 0; z-index: 50; backdrop-filter: blur(4px); background: rgba(255,255,252,0.96); }
+ .header-inner { display: flex; justify-content: space-between; align-items: center; max-width: var(--container-max); margin: 0 auto; padding: 0 1.5rem; }
+ .logo { font-family: var(--font-serif); font-size: 1.8rem; font-weight: 600; color: var(--color-primary); text-decoration: none; letter-spacing: -0.02em; }
+ .logo:hover { text-decoration: none; }
+ nav { display: flex; gap: 2.2rem; align-items: center; }
+ nav a { font-size: 0.95rem; font-weight: 500; color: var(--color-text); text-decoration: none; letter-spacing: 0.02em; padding: 0.4rem 0; border-bottom: 2px solid transparent; transition: border-color 0.2s; }
+ nav a:hover { border-bottom-color: var(--color-secondary); color: #000; }
+ .tel-link { background: var(--color-primary); color: #fff !important; padding: 0.5rem 1.4rem !important; border-radius: 40px; font-weight: 600; border: none; text-decoration: none; transition: background 0.2s; }
+ .tel-link:hover { background: #1f402a; color: #fff !important; border-bottom: none; }
+ .hamburger-menu { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+ .hamburger-menu span { width: 28px; height: 2px; background: var(--color-text); border-radius: 4px; transition: 0.2s; }
+ /* ========== Hero / Page title ========== */
+ .page-hero { padding: 3.5rem 0 1.8rem; }
+ .page-hero .container { display: flex; flex-direction: column; }
+ .page-hero p.sub { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; color: #6b6b5e; margin-bottom: 0.2rem; }
+ /* ========== Blog article ========== */
+ .blog-article { padding: 1rem 0 4rem; }
+ .blog-article .container { max-width: 820px; }
+ .blog-meta { display: flex; gap: 1.2rem; font-size: 0.9rem; color: #6b6b5e; margin-bottom: 1.8rem; border-bottom: 1px dashed var(--color-border); padding-bottom: 1rem; }
+ .blog-meta span { display: inline-flex; align-items: center; gap: 0.3rem; }
+ .featured-image { width: 100%; height: auto; border-radius: 12px; margin: 1.5rem 0 2rem; border: 1px solid var(--color-border); }
+ .data-box { background: #f3f1ec; border-left: 4px solid var(--color-primary); padding: 1.6rem 2rem; margin: 2rem 0; border-radius: 0 12px 12px 0; }
+ .data-box p { margin-bottom: 0.6rem; font-size: 0.98rem; }
+ .data-box strong { color: var(--color-primary); }
+ blockquote { font-family: var(--font-serif); font-size: 1.2rem; font-style: italic; border-left: 4px solid var(--color-secondary); padding-left: 1.4rem; margin: 2rem 0; color: #2e3d32; background: #f9f7f2; padding: 1.2rem 1.8rem; border-radius: 0 8px 8px 0; }
+ /* ========== Footer ========== */
+ footer { background: #1e2b22; color: #d8d8cc; padding: 2.8rem 0; margin-top: 3rem; }
+ footer .container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1.5rem; }
+ footer a { color: #c7d4c0; text-decoration: underline; }
+ footer a:hover { color: #fff; }
+ .footer-copy { font-size: 0.85rem; opacity: 0.8; margin-top: 1.2rem; width: 100%; text-align: center; border-top: 1px solid #3a4d3e; padding-top: 1.2rem; }
+ /* ========== Responsive 768 ========== */
+ @media (max-width: 768px) {
+ .header-inner { flex-wrap: wrap; }
+ nav { display: none; width: 100%; flex-direction: column; gap: 1rem; padding: 1.2rem 0 0.8rem; border-top: 1px solid var(--color-border); margin-top: 0.8rem; }
+ nav.nav-present { display: flex; }
+ .hamburger-menu { display: flex; }
+ .tel-link { align-self: flex-start; }
+ .page-hero h1 { font-size: 1.9rem; }
+ .blog-meta { flex-wrap: wrap; gap: 0.6rem; }
+ }
+ @media (min-width: 769px) {
+ nav.nav-present { display: flex !important; }
+ .hamburger-menu { display: none; }
+ }
+ /* organic-stripe subtle texture */
+ body::before { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; background: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(200,190,170,0.02) 40px, rgba(200,190,170,0.02) 42px); z-index: -1; }
+ </style>
+ <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
 
 <header>
-    <div class="header-inner">
-        <a href="/" class="logo">반포 마사지 정보</a>
-        <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('nav-present')">
-            <span></span><span></span><span></span>
-        </button>
-        <nav class="nav-present">
-            <a href="/">홈</a>
-            <a href="/about">소개</a>
-            <a href="/services">서비스</a>
-            <a href="/blog">블로그</a>
-            <a href="/contact">문의</a>
-            <a href="tel:0507-1337-0824" class="tel-link">0507-1337-0824</a>
-        </nav>
-    </div>
+ <div class="header-inner">
+ <a href="/" class="logo">반포 마사지 정보</a>
+ <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('nav-present')">
+ <span></span><span></span><span></span>
+ </button>
+ <nav class="nav-present">
+ <a href="/">홈</a>
+ <a href="/about">소개</a>
+ <a href="/services">서비스</a>
+ <a href="/blog">블로그</a>
+ <a href="/contact">문의</a>
+ <a href="tel:0507-1337-0824" class="tel-link">0507-1337-0824</a>
+ </nav>
+ </div>
 </header>
 
 <main>
-  <section class="page-hero">
-    <p class="sub">반포 · 마사지 참고 정보</p>
-    <h1>마사지, 무엇이 효과를 다르게 만드나</h1>
-  </section>
-  <p class="blog-meta">반포 지역 마사지 안내 · 이용 가이드</p>
-  <a class="tel-link" href="tel:0507-1337-0824">0507-1337-0824</a>
-  <div class="featured-image"></div>
-  <article class="blog-article">
-    <p>마사지는 종류와 부위, 강도에 따라 몸에 전달되는 자극이 달라진다고 알려져 있다. 이 글에서는 관리 방식을 고를 때 참고할 수 있는 기본 개념과, 소요 시간·강도 같은 조건이 무엇에 의해 정해지는지를 정리했다.</p>
-    <h2>강도와 시간을 정하는 요소</h2>
-    <p>같은 관리라도 사람마다 체감하는 강도는 다르게 느껴질 수 있다. 실제 진행되는 강도와 시간은 상담 과정에서 전달하는 컨디션, 평소 활동량, 원하는 부위 범위에 따라 조정되는 경우가 많아, 방문 전 정확한 수치를 단정하기보다는 상담을 통해 맞추는 방식이 일반적이다.</p>
-    <div class="data-box">
-      <h3>소요 시간에 영향을 주는 요소</h3>
-      <ul>
-        <li>관리 부위의 범위 — 전신인지 특정 부위인지</li>
-        <li>선택한 관리 방식의 종류</li>
-        <li>상담에서 전달한 컨디션과 요청 사항</li>
-      </ul>
-    </div>
-    <h2>관리 전후 참고할 점</h2>
-    <p>관리 직후에는 몸이 이완된 상태이므로 충분한 수분 섭취와 휴식이 도움이 된다고 알려져 있다. 격한 운동이나 무리한 일정은 관리 직후보다는 시간을 두고 진행하는 편이 낫다는 의견이 일반적이다.</p>
-    <div class="data-box">
-      <h3>미리 챙기면 좋은 확인 사항</h3>
-      <ul>
-        <li>최근 통증 부위나 컨디션 변화가 있었는지 확인한다</li>
-        <li>원하는 강도를 미리 생각해 상담 때 전달한다</li>
-        <li>방문 가능한 시간대를 전화로 먼저 확인한다</li>
-      </ul>
-    </div>
-  </article>
-  <p class="footer-copy">본 글은 반포 지역 마사지 이용을 돕기 위한 일반 정보이며, 개인의 건강 상태에 따라 적합한 관리 방식은 달라질 수 있다.</p>
+ <section class="page-hero">
+ <p class="sub">반포 · 마사지 참고 정보</p>
+ <h1>마사지, 무엇이 효과를 다르게 만드나</h1>
+ </section>
+ <p class="blog-meta">반포 지역 마사지 안내 · 이용 가이드</p>
+ <a class="tel-link" href="tel:0507-1337-0824">0507-1337-0824</a>
+ <div class="featured-image"></div>
+ <article class="blog-article">
+ <p>마사지는 종류와 부위, 강도에 따라 몸에 전달되는 자극이 달라진다고 알려져 있다. 이 글에서는 관리 방식을 고를 때 참고할 수 있는 기본 개념과, 소요 시간·강도 같은 조건이 무엇에 의해 정해지는지를 정리했다.</p>
+ <h2>강도와 시간을 정하는 요소</h2>
+ <p>같은 관리라도 사람마다 체감하는 강도는 다르게 느껴질 수 있다. 실제 진행되는 강도와 시간은 상담 과정에서 전달하는 컨디션, 평소 활동량, 원하는 부위 범위에 따라 조정되는 경우가 많아, 방문 전 정확한 수치를 단정하기보다는 상담을 통해 맞추는 방식이 일반적이다.</p>
+ <div class="data-box">
+ <h3>소요 시간에 영향을 주는 요소</h3>
+ <ul>
+ <li>관리 부위의 범위 — 전신인지 특정 부위인지</li>
+ <li>선택한 관리 방식의 종류</li>
+ <li>상담에서 전달한 컨디션과 요청 사항</li>
+ </ul>
+ </div>
+ <h2>관리 전후 참고할 점</h2>
+ <p>관리 직후에는 몸이 이완된 상태이므로 충분한 수분 섭취와 휴식이 도움이 된다고 알려져 있다. 격한 운동이나 무리한 일정은 관리 직후보다는 시간을 두고 진행하는 편이 낫다는 의견이 일반적이다.</p>
+ <div class="data-box">
+ <h3>미리 챙기면 좋은 확인 사항</h3>
+ <ul>
+ <li>최근 통증 부위나 컨디션 변화가 있었는지 확인한다</li>
+ <li>원하는 강도를 미리 생각해 상담 때 전달한다</li>
+ <li>방문 가능한 시간대를 전화로 먼저 확인한다</li>
+ </ul>
+ </div>
+ </article>
+ <p class="footer-copy">본 글은 반포 지역 마사지 이용을 돕기 위한 일반 정보이며, 개인의 건강 상태에 따라 적합한 관리 방식은 달라질 수 있다.</p>
 </main>
 
 
