@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · kr-pbn-sr-024</title>
+  <meta name="description" content="kr-pbn-sr-024에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://banpo-body-care.node-link.shop/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+ :root {
+ --primary: #2C3E50;
+ --secondary: #8E44AD;
+ --accent: #F1C40F;
+ --bg: #F8F9FA;
+ --text: #2C3E50;
+ --light-text: #7F8C8D;
+ --white: #FFFFFF;
+ --border: #E0E0E0;
+ --shadow: 0 2px 8px rgba(0,0,0,0.1);
+ --radius: 12px;
+ --transition: 0.3s ease;
+ --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+ }
+ html { scroll-behavior: smooth; }
+ body {
+ font-family: var(--font);
+ background: var(--bg);
+ color: var(--text);
+ line-height: 1.8;
+ font-weight: 400;
+ -webkit-font-smoothing: antialiased;
+ }
+ .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+ h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.02em; color: var(--primary); }
+ h1 { font-size: 2.8rem; line-height: 1.2; margin-bottom: 0.5em; }
+ h2 { font-size: 2rem; line-height: 1.3; margin-bottom: 0.6em; margin-top: 2em; }
+ h3 { font-size: 1.4rem; line-height: 1.4; margin-bottom: 0.4em; margin-top: 1.5em; }
+ p { margin-bottom: 1.2em; color: var(--text); }
+ a { color: var(--secondary); text-decoration: none; transition: var(--transition); }
+ a:hover { color: var(--primary); text-decoration: underline; }
+
+ header {
+ background: var(--white);
+ border-bottom: 1px solid var(--border);
+ padding: 16px 0;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ box-shadow: var(--shadow);
+ }
+ header .container { display: flex; justify-content: space-between; align-items: center; }
+ .logo { font-size: 1.6rem; font-weight: 700; color: var(--primary); letter-spacing: -0.03em; }
+ .logo span { color: var(--secondary); }
+ nav { display: flex; gap: 32px; align-items: center; }
+ nav a { font-size: 1rem; font-weight: 500; color: var(--text); position: relative; padding: 4px 0; }
+ nav a::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: var(--secondary); transition: var(--transition); }
+ nav a:hover::after { width: 100%; }
+ nav a:hover { text-decoration: none; color: var(--secondary); }
+ .tel-link {
+ background: var(--secondary);
+ color: var(--white) !important;
+ padding: 10px 24px !important;
+ border-radius: 50px;
+ font-weight: 600;
+ transition: var(--transition);
+ text-decoration: none !important;
+ }
+ .tel-link:hover { background: var(--primary); transform: scale(1.02); }
+ .tel-link::after { display: none !important; }
+ .hamburger-menu { display: none; flex-direction: column; cursor: pointer; gap: 5px; padding: 4px; }
+ .hamburger-menu span { width: 28px; height: 3px; background: var(--primary); border-radius: 2px; transition: var(--transition); }
+
+ @media (max-width: 768px) {
+ .hamburger-menu { display: flex; }
+ nav { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); padding: 20px; box-shadow: var(--shadow); border-bottom: 1px solid var(--border); gap: 16px; }
+ nav.active { display: flex; }
+ nav a { font-size: 1.1rem; }
+ .tel-link { text-align: center; }
+ h1 { font-size: 2rem; }
+ h2 { font-size: 1.6rem; }
+ .container { padding: 0 16px; }
+ }
+ .hero { padding: 80px 0 60px; text-align: center; }
+ .hero h1 { font-size: 3.2rem; margin-bottom: 0.3em; }
+ .hero p { font-size: 1.2rem; color: var(--light-text); max-width: 700px; margin: 0 auto 1.5em; }
+ .hero .cta-btn { display: inline-block; background: var(--secondary); color: var(--white); padding: 14px 40px; border-radius: 50px; font-weight: 600; font-size: 1.1rem; transition: var(--transition); text-decoration: none; }
+ .hero .cta-btn:hover { background: var(--primary); transform: translateY(-2px); text-decoration: none; }
+
+ .section { padding: 60px 0; }
+ .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+ .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; }
+ @media (max-width: 768px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+ .card {
+ background: var(--white);
+ border-radius: var(--radius);
+ padding: 32px;
+ box-shadow: var(--shadow);
+ transition: var(--transition);
+ border: 1px solid transparent;
+ }
+ .card:hover { border-color: var(--secondary); transform: translateY(-4px); }
+ .card h3 { margin-top: 0; }
+ .card p { color: var(--light-text); font-size: 0.95rem; }
+
+ .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+ .faq-item h3 { cursor: pointer; margin: 0; font-size: 1.2rem; display: flex; justify-content: space-between; align-items: center; }
+ .faq-item h3::after { content: '+'; font-size: 1.5rem; color: var(--secondary); font-weight: 300; }
+ .faq-item.active h3::after { content: '−'; }
+ .faq-item p { margin-top: 12px; color: var(--light-text); display: none; }
+ .faq-item.active p { display: block; }
+
+ .cta-section { background: var(--primary); color: var(--white); text-align: center; padding: 60px 0; border-radius: var(--radius); margin: 40px 0; }
+ .cta-section h2 { color: var(--white); }
+ .cta-section p { color: rgba(255,255,255,0.8); }
+ .cta-section .cta-btn { background: var(--accent); color: var(--primary); }
+ .cta-section .cta-btn:hover { background: var(--white); }
+
+ footer { text-align: center; padding: 40px 0; border-top: 1px solid var(--border); margin-top: 60px; color: var(--light-text); font-size: 0.9rem; }
+ footer a { color: var(--secondary); }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · kr-pbn-sr-024">
+  <meta property="og:description" content="kr-pbn-sr-024에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://banpo-body-care.node-link.shop/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="container">
+ <div class="logo">반포<span>마사지</span></div>
+ <div class="hamburger-menu" onclick="document.querySelector('nav').classList.toggle('active')">
+ 
+ </div>
+ <nav>
+ <a href="/">홈</a>
+ <a href="/about.html">소개</a>
+ <a href="/services.html">서비스</a>
+ <a href="/info.html">정보</a>
+ <a href="/contact.html">연락처</a>
+ 
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 40개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0364.html">반포 마사지 정보로 알아보는 공덕 셔츠룸 추천정보 비교 기준</a>
+        <p class="post-item__summary">여러분은 평소 휴식을 취하거나 사교 모임을 계획할 때 어떤 기준을 가지고 업체를 선정하시나요? 반포 마사지 정보처럼 지역 기반의 서비스는 단순히 가격만 볼 것이 아니라 전반적인 품질을 고려해야 합니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0365.html">반포 마사지 정보 확인 후 참고하는 연남 유흥 추천정보 가이드</a>
+        <p class="post-item__summary">반포 마사지 정보 확인은 도심 속 피로를 관리하는 기초적인 과정입니다. 하지만 주말 저녁 활기찬 분위기를 즐기고 싶다면 연남 일대의 트렌드를 파악하는 것이 우선입니다. 건전한 휴식 이후 색다른 경험</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0366.html">반포 마사지 정보 비교분석으로 살펴보는 마곡 가라오케 추천정보 가이드</a>
+        <p class="post-item__summary">일상의 피로를 해소하는 방법으로 반포 마사지 정보 등을 찾아보며 휴식을 계획하는 분들이 많습니다. 하지만 때로는 활기찬 분위기에서 사람들과 어울리는 여가 시간을 보내는 것이 스트레스 해소에 더 효과</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0367.html">반포 마사지 정보 이용자도 실수하는 마곡 유흥 추천정보 예약 절차</a>
+        <p class="post-item__summary">반포 마사지 정보 등을 습득하여 평온한 휴식을 즐기는 분들도 가끔 마곡 지역에서의 활동을 계획하다가 낭패를 보는 경우가 있습니다. 특히 유흥 시설을 방문할 때 준비 없이 무작정 방문하는 것은 만족도</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0368.html">반포 마사지 정보 확인하듯 체크하는 합정 노래방 추천정보 접근성</a>
+        <p class="post-item__summary">반포 마사지 정보 등을 살필 때 위치와 접근성을 우선순위에 두는 것은 현명한 습관입니다. 합정 지역의 노래방을 찾을 때도 마찬가지로 대중교통 이용 편의성이나 주차 여건을 미리 점검하는 것이 좋습니다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0369.html">반포 마사지 정보 확인 후 떠나는 핫한 연남 클럽 추천정보 완벽 가이드</a>
+        <p class="post-item__summary">오랜만에 도심의 활기를 느끼고자 친구들과 연남동을 찾았을 때 가장 당혹스러운 순간은 예상치 못한 대기 줄입니다. 반포 마사지 정보 등을 통해 신체 피로를 미리 관리하고 최상의 컨디션을 유지했다면, </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0370.html">반포 마사지 정보 습득 뒤 알아보는 합정 셔츠룸 추천정보 현명한 이용법</a>
+        <p class="post-item__summary">많은 이들이 셔츠룸이라고 하면 단순히 유흥만을 떠올리지만, 이는 공간의 운영 방식과 성격을 제대로 이해하지 못한 데서 오는 오해일 수 있습니다. 반포 마사지 정보 등을 찾아 몸을 먼저 회복하는 것이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0371.html">반포 마사지 정보 탐색만큼 중요한 공덕 가라오케 추천정보 인원 구성 팁</a>
+        <p class="post-item__summary">공덕에서 모임을 준비할 때는 적절한 장소를 찾는 것뿐만 아니라, 참석자들의 성향과 규모를 고려한 가라오케 선택이 필수적인 충족 조건입니다. 반포 마사지 정보 등을 통해 컨디션을 미리 조절했더라도, </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0372.html">반포 마사지 정보 확인하고 상수 마사지 추천정보 활용하기</a>
+        <p class="post-item__summary">일상의 피로를 풀기 위해 마사지 샵을 찾고 계신가요? 매번 검색창에 반포 마사지 정보 등을 입력하며 시간을 보내지만, 정작 내 동네인 상수 지역에서 만족스러운 곳을 찾기는 쉽지 않습니다. 과연 어떤</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0373.html">반포 마사지 정보 대신 망원 노래방 추천정보 판별 기준</a>
+        <p class="post-item__summary">즐거운 모임을 위해 노래방을 찾을 때 막막함을 느낀 적이 있으신가요? 포털 사이트에서 반포 마사지 정보 같은 엉뚱한 검색어에 시간을 뺏기지 말고, 망원 지역에서 최적의 공간을 찾는 체계적인 단계를 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0374.html">반포 마사지 정보 비교와 홍대 노래방 추천정보 가격 분석</a>
+        <p class="post-item__summary">홍대 인근에서 노래방을 선택할 때 가격과 시설 사이에서 고민하는 경우가 많습니다. 반포 마사지 정보 등을 찾던 분들이 갑자기 유흥 공간을 찾으려 할 때 겪는 가장 큰 난관이 바로 이 가격 체계의 복</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/interview-001-hvlf7q.html">반포 마사지 정보 경험자에게 물어본 현실적인 판단 기준</a>
+        <p class="post-item__summary">반포 지역에서 마사지 업소를 찾을 때는 단순히 화려한 홍보 문구에 의존하기보다 실제로 이용해 본 사람들의 경험에서 나온 기준을 살피는 것이 좋습니다. 반포 인근은 교통이 편리하고 다양한 형태의 관리</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">반포 마사지 정보</a>
+        <p class="post-item__summary">반포 지역에서 마사지 서비스를 이용하려는 경우, 사전에 충분한 정보를 확인하는 것이 중요합니다. 마사지 업소는 다양하게 존재하며, 각 업소에서 제공하는 서비스 내용과 운영 방식은 서로 다를 수 있습</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">반포 마사지 정보</a>
+        <p class="post-item__summary">마사지는근육의 긴장을 풀어주고 피로 회복에 도움을 주는 건강한 셀프케어 방법입니다. 반포지역에는 다양한 마사지 시설이 위치하고 있으며, 이용자의 건강 상태와 취향에 따라 적합한 곳을 선택할 수 있습</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">반포 마사지 정보</a>
+        <p class="post-item__summary">마사지를 찾고 계신다면 반포 지역의 정보를 먼저 확인하는 것이 좋습니다. 마사지는 신체의 긴장을 완화하고 근육의 피로를 풀어주는 데 도움이 될 수 있습니다. 반포는 다양한 마사지 정보가 모여 있는 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">반포 마사지 정보</a>
+        <p class="post-item__summary">반포 지역에서 마사지 서비스를 알아보는 분들을 위해 기본적인 정보를 안내합니다. 마사지는 신체 피로 회복과 스트레스 완화에 도움을 줄 수 있는 일반적인 건강 관리 방식입니다. 지역에서 제공하는 다양</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-3.html">반포 마사지 정보</a>
+        <p class="post-item__summary">반포 일대에서 마사지를 찾아보시는 분들을 위해 기본적인 안내를 정리합니다. 마사지는 긴장된 근육을 이완시키고, 일상에서 쌓인 피로 회복에 도움을 주는 일반화된 웰니스 행위로 널리 알려져 있습니다. </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/review-002-1llsf2t.html">반포 마사지 정보</a>
+        <p class="post-item__summary">반포 지역은 바쁜 일상 속에서 지친 몸과 마음을 달래려는 분들이 자주 찾는 다양한 힐링 공간이 조성되어 있는 곳입니다. 스트레스 해소와 피로 회복을 돕는 마사지는 관리가 필요한 현대인들에게 효과적인</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/t3link-001-1llsf2t.html">반포 마사지 정보 관련 추천 정보</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/t3link-002-hvlf7q.html">반포 마사지 정보</a>
+        <p class="post-item__summary">반포 지역은 활력 넘치는 도심 속에서 지친 몸과 마음을 달래고 편안한 휴식을 취할 수 있는 다양한 마사지 관리숍들이 자리 잡고 있는 곳입니다. 바쁜 일상과 과도한 업무, 스트레스로 인해 굳어진 근육</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
